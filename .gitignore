@@ -1,0 +1,36 @@
+# Temporary files
+\#*
+*.\#*
+._*
+*~
+
+# Software specific .dot-/files that are unnecessairy
+node_modules/*
+.DS_Store
+.git
+.hg
+.lock-wscript
+.svn
+.wafpickle-*
+CVS
+npm-debug.log
+complexity*
+
+# __NEVER__ commit configuration files to git (srsly don't do it)
+config/*.json
+
+tests/coverage.html
+
+# automatically generated using bower or build
+assets/vendor/
+assets/build/
+
+# automatically generated from translation tasks
+locale/lang/de/client.js
+locale/lang/de/client.json
+locale/lang/de/messages.js
+locale/lang/de/messages.json
+locale/lang/en_US/client.js
+locale/lang/en_US/client.json
+locale/lang/en_US/messages.js
+locale/lang/en_US/messages.json

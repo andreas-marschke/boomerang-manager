@@ -1,0 +1,11 @@
+{% extends "nosession.html" %}
+
+{% block body %}
+<div class="col-md-6 col-md-offset-3">
+  <div class="alert alert-danger">
+    <h1>{{ gettext("Error 404") }}</h1>
+    <p>{{ gettext("File was not found! :(") }}</p>
+    <p><a href="{{back}}"> {{ gettext("Maybe you want to get back?") }} </a></p>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "nosession.html" %}
+
+{% block body %}
+<div class="col-md-4 col-md-offset-4">
+  <div class="page-header">
+    <h1>{{gettext("Login")}}</h1>
+  </div>
+
+  {% if (message) %}
+  <div class="message message-info message-transition alert alert-info">
+    {{ message }}
+  </div>
+  {% endif %}
+
+  {% if (error) %}
+  <div class="message message-error message-transition alert alert-danger">
+    {{ error }}
+  </div>
+  {% endif %}
+
+  <form role="form" class="form-login" method="POST" action="/login">
+    <div class="form-group">
+      <label for="username">{{ gettext("Username") }}</label>
+      <input type="username" class="form-control" name="username" value="" placeholder='{{ gettext("username")}}' />
+    </div>
+    <div class="form-group">
+      <label for="password">{{ gettext("Password") }}</label>
+      <input type="password" class="form-control" name="password" value="" placeholder='{{ gettext("password")}}' />
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">{{ gettext("Login") }}</button>
+  </form>
+</div>
+{% endblock %}

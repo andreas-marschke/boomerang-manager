@@ -1,0 +1,21 @@
+{
+  "server": {
+    "threads": 1,
+    "listeners": [{
+      "protocol" : "http",
+      "port" : "4001",
+      "listen" : "0.0.0.0"
+    }]
+  },
+  "logging": {
+    "datastore": {
+      "level" : "trace"
+    },
+    "web": {
+      "level" : "trace"
+    },
+    "application": {
+      "level" : "trace"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+body {
+  margin-bottom: 30px;
+}
+
+body > .container {
+  padding-top: 60px;
+}
+
+.footer {
+  height: 50px;
+  padding-top: 20px;
+  position: fixed;
+  display: block;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-themed {
+  background-color: #eee;
+  text-align: center;
+}
