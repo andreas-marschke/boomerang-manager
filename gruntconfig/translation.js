@@ -67,7 +67,7 @@ module.exports = {
 	nggettext_compile: {
 	    all: {
 		files: {
-		    'assets/build/js/translations.js': ['locale/lang/**/client.pot']
+		    'assets/build/js/translations.js': ['locale/lang/**/client.po']
 		}
 	    }
 	}
