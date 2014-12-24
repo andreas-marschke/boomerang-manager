@@ -17,8 +17,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-ngmin");
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-csslint");
-    grunt.loadNpmTasks('grunt-angular-gettext');
-    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks("grunt-angular-gettext");
+    grunt.loadNpmTasks("grunt-contrib-copy");
 
     grunt.initConfig(configs);
 

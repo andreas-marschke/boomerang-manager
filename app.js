@@ -1,15 +1,15 @@
 "use strict";
 /* eslint-disable no-console,vars-on-top*/
 
-var conf = require("node-conf"),
-    path = require("path");
+var conf = require("node-conf");
 
 var Datastore = require("./lib/datastore"),
     Logging = require("./lib/logging"),
     Listener = require("./lib/listener");
 
-var numcpus = require("os").cpus().length,
-    config = conf.load(process.env.NODE_ENV);
+/* var numcpus = require("os").cpus().length */
+
+var config = conf.load(process.env.NODE_ENV);
 
 if (typeof config.server === "undefined") {
     console.log(new Error("Found invalid config! exiting..."));
@@ -42,7 +42,7 @@ datastore.connect().then(function(instance) {
 	    app.set("x-powered-by", null);
 	    app.settings["x-powered-by"] = null;
 
-	    app.get("^/$", function(req,res,next) {
+	    app.get("^/$", function(req, res) {
 		res.removeHeader("x-powered-by");
 		res.redirect(config.routes["default"]);
 	    });
