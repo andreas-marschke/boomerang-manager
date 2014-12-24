@@ -54,12 +54,12 @@ module.exports = function () {
 	    cssmin: {
 		minify: {
 		    options: {
-			keepSpecialComments:false,
-			expand: true
+			keepSpecialComments: 0,
+			report: 'gzip'
 		    },
-		    files: [{
+		    files: {
 			"assets/build/css/build.min.css": minifiable.css
-		    }]
+		    }
 		}
 	    },
 	    ngmin: {

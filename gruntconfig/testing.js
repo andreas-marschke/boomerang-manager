@@ -1,6 +1,6 @@
 "use strict";
 
-var testfiles = require("./testfiles.js");
+var testfiles = require("./files/testing.js");
 
 module.exports = function() {
     return {
@@ -13,7 +13,7 @@ module.exports = function() {
 			clearRequireCache: true,
 			gc: true
 		    },
-		    src: testfiles.files
+		    src: testfiles.mochatestfiles
 		},
 		"html-cov": {
 		    options: {
@@ -21,7 +21,22 @@ module.exports = function() {
 			quiet: true,
 			captureFile: "tests/coverage.html"
 		    },
-		    src: testfiles.files
+		    src: testfiles.mochatestfiles
+		}
+	    },
+	    karma: {
+		options: {
+		    configFile: "./karma.config.js",
+		    preprocessors: {
+/*			"./build/*.js": ["coverage"] */
+		    },
+		    basePath: "./",
+		    files: testfiles.karmafiles
+		},
+		unit: {
+		    singleRun: true,
+		    colors: false,
+		    browsers: ['PhantomJS']
 		}
 	    }
 	}
