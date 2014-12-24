@@ -1,9 +1,9 @@
-body {
-  margin-bottom: 30px;
-}
+/* body { */
+/*   margin-bottom: 30px; */
+/* } */
 
 body > .container {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .footer {

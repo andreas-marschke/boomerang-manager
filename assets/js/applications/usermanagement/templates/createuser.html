@@ -1,0 +1,55 @@
+<div class="page-header">
+  <h1 translate>Register New User</h1>
+</div>
+
+<div class="col-md-12">
+  <form role="form">
+    <div class="form-group">
+      <label for="username" translate>Username:</label>
+      <input type="text" class="form-control" name="username" ng-model="user.name" placeholder="{{ 'Username' | translate }}" />
+    </div>
+
+    <div class="form-group">
+      <label for="authmethod" translate>Authentication</label>
+      <select name="authmethod" class="form-control" ng-options="authmethod.name for authmethod in auth.methods" ng-model="auth.method"></select>
+    </div>
+  </form>
+</div>
+
+<div class="page-header">
+  <h1 translate>Create New Users Collection</h1>
+</div>
+
+<div class="col-md-12">
+  <form role="form">
+    <div class="form-group">
+      <label for="collectionname" translate>Collection Name:</label>
+      <input type="text" class="form-control" name="collectionname" ng-model="webcollection.name" placeholder="{{ 'Webcollection' | translate }}" />
+    </div>
+
+    <div class="form-group">
+      <ul class="list-unstyled">
+	<li class="" ng-repeat="type in defaults.types">
+	  <label>
+	    <input type="checkbox" checklist-model="webcollection.types" checklist-value="type"> {{type}}
+	  </label>
+	</li>
+      </ul>
+    </div>
+
+    <div class="form-group">
+
+    </div>
+
+    <div class="col-md-8 col-md-offset-2">
+      <ul class="list-unstyled">
+	<li ng-repeat="location in collection.locations">
+	  <dl class="dl-horizontal">
+
+	  </dl>
+	</li>
+      </ul>
+    </div>
+  </form>
+
+</div>

@@ -1,0 +1,33 @@
+<div class="page-header">
+  <h1 translate>Usermanagement</h1> <small translate>Get to grips with your userbase!</small>
+</div>
+
+<loading ng-show="loading" state="loadingState" />
+
+<div class="row" ng-show="!loading">
+  <div class="col-md-6">
+    <p translate>Details:</p>
+    <dl class="dl-horizontal">
+      <dt translate>Username:</dt>
+      <dd>{{ user.name }}</dd>
+      <dt translate>ID:</dt>
+      <dd>{{ user.id }}</dd>
+      <dt translate>Via:</dt>
+      <dd>{{ user.via }}</dd>
+    </dl>
+  </div>
+</div>
+<div class="row" ng-show="!loading">
+  <div class="col-md-12">
+    <p translate>Webpages</p>
+    <ul class="list-unstyled" id="webcollection-charts">
+      <li ng-repeat="webcollection in webcollections">
+	<webcollection-chart name="webcollection.name" sizes="webcollection.sizes"></webcollection-chart>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<button back-button class="btn btn-default fa fa-angle-double-left back-button">
+  <span translate>Back</span>
+</button>

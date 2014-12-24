@@ -1,0 +1,121 @@
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .input-show-hide {
+    padding:10px;
+    border:1px solid black;
+    background:white;
+  }
+
+  .input-show-hide {
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
+  }
+
+  .input-show-hide.ng-hide {
+    opacity:0;
+    display: none;
+  }
+  
+  .filter-panel .input-group {
+    width: 100%;
+  }
+  
+  .filter-panel .icon {
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-top: 10px;
+  }
+
+  .filter-panel .icon:first-child {
+    padding-top: 0px;
+  }
+  
+  .filter-panel .icon label {
+    padding-left: 10px;
+  }
+
+  .page-header a#create-user {
+    float: none;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .filter-panel .icon label:first-child,
+  .filter-panel .icon span:first-child {
+    display: none;
+  }
+
+  .filter-panel .icon label {
+    display: none;
+  }
+  
+  .filter-panel .icon label.btn {
+    display: block;
+  }
+
+  .filter-panel .icon label.btn span{
+    display: block;
+  }
+
+}
+
+@media (min-width: 769px) {
+  .filter-panel .input-group {
+    width: 24%;
+  }
+
+  .filter-panel .icon {
+    width: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .filter-panel .icon label {
+    padding-left: 10px;
+  }
+
+  .filter-panel .input-group#pagination > select[name="pagination"] {
+    width: 100%;
+  }
+
+
+  .filter-panel .input-group#pagination {
+    width: 26%;
+  }
+
+  .filter-panel .icon label.btn {
+    display: none;
+  }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .filter-panel .input-group {
+    width: 26%;
+  }
+
+  .filter-panel .icon {
+    width: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .filter-panel .icon label {
+    padding-left: 10px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .filter-panel .input-group#pagination {
+    width: 32%;
+  }
+  
+}
+
+

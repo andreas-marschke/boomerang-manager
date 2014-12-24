@@ -1,0 +1,93 @@
+<div class="page-header">
+  <h1 translate>Usermanagement</h1> <small translate>Get to grips with your userbase!</small>
+  <a href="#/user/new" id="create-user" class="btn btn-success btn-lg fa fa-plus"> <span translate>Create New User</span></a>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="alert alert-info">
+      <p translate>
+	Use this site to manage your user accounts and what they are able to do in your environment.
+      </p>
+    </div>
+  </div>
+
+  <loading ng-show="loading"></loading>
+
+  <div class="col-md-12" ng-show="!loading">
+    <form class="form-inline filter-panel" role="form">
+      <div class="form-group">
+	<div class="input-group icon">
+	  <span class="fa fa-search"></span>
+	  <label for="user" translate>Filter</label>
+	  <label class="btn" for="user" ng-click="showFilters = !showFilters" translate>Filter</label>
+	</div>
+
+	<div class="input-group" ng-show="showFilters" ng-class="input-show-hide">
+	  <input type="text" class="form-control" name="user" value="" placeholder="{{ 'By User' | translate }}" ng-model="search.user.name" />
+	</div>
+
+	<div class="input-group" ng-show="showFilters" ng-class="input-show-hide">
+	  <input type="text" class="form-control" name="web" value="" placeholder="{{ 'By Webcollection' | translate }}" ng-model="search.name" />
+	</div>
+
+	<div class="input-group icon">
+	  <span class="fa fa-th-list"></span>
+	  <label for="pagination" class="inline" translation>Rows:</label>
+	  <label class="btn" for="pagination" ng-click="showPagination= !showPagination" translate><a>Rows</a></label>
+	</div>
+	<div class="input-group" ng-show="showPagination" ng-class="input-show-hide" id="pagination">
+	  <select name="pagination" class="form-control" ng-options="size.name for size in paginationSize" ng-model="rowsPerPage"></select>
+	</div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-12" ng-show="!loading">
+    <table class="table table-striped table-responsive table-responsive">
+      <thead>
+	<th translate>Username</th>
+	<th translate>Webcollection</th>
+	<th translate>Features</th>
+	<th>
+	  <button class="btn btn-sm btn-block btn-success" ng-click="refresh()"><span class="fa fa-refresh"></button>
+	</th>
+      </thead>
+      <tbody>
+	<tr ng-repeat="web in filtered | paginationSlice:((page -1)*rowsPerPage.value) | limitTo:rowsPerPage.value" class="webcollection">
+	  <td><a href="#/user/{{ web.owner }}">{{ web.user.name }}</a></td>
+	  <td><a href="#/collection/{{ web.id }}">{{ web.name }}</a></td>
+	  <td>{{ web.types.join(", ") }}</td>
+	  <td></td>
+	</tr>
+      </tbody>
+    </table>
+    <div class="text-center">
+      <pagination class="pagination-medium"
+		  ng-model="page"
+		  ng-show="filtered.length > rowsPerPage.value && pagination"
+		  data-total-items="filtered.length"
+		  data-max-size="5"
+		  data-current-page="page"
+		  data-items-per-page="rowsPerPage.value"
+		  ng-change="pageChanged()"
+		  data-boundary-links="true"
+		  data-previous-text="&laquo;"
+		  data-next-text="&raquo;">
+      </pagination>
+
+      <pager class="pagination-medium"
+		  ng-model="page"
+		  ng-show="filtered.length > rowsPerPage.value && pager"
+		  data-total-items="filtered.length"
+		  data-max-size="5"
+		  data-current-page="page"
+		  data-items-per-page="rowsPerPage.value"
+	          ng-change="pageChanged()"
+		  data-boundary-links="true"
+		  data-previous-text="{{ 'Previous' | translate }}"
+		  data-next-text="{{ 'Next' | translate }}">
+      </pager>
+
+    </div>
+  </div>
+</div>
