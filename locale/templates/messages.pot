@@ -7,39 +7,39 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2014-12-08 10:43+0000\n"
+"POT-Creation-Date: 2014-12-24 01:46+0000\n"
 
-#: lib/authentication/index.js:62
-#: lib/authentication/views/login.html:7
-#: lib/authentication/views/login.html:31
+#: lib/authentication/index.js:67
+#: lib/authentication/views/login.html:6
+#: lib/authentication/views/login.html:30
 msgid "Login"
 msgstr ""
 
-#: lib/authentication/index.js:64
+#: lib/authentication/index.js:70
 msgid "Login Failed!"
 msgstr ""
 
-#: lib/authentication/index.js:64
+#: lib/authentication/index.js:70
 msgid "Login Error"
 msgstr ""
 
-#: lib/error/index.js:33
+#: lib/error/index.js:26
 msgid "404 - Not Found!"
 msgstr ""
 
-#: lib/authentication/views/login.html:24
+#: lib/authentication/views/login.html:23
 msgid "Username"
 msgstr ""
 
-#: lib/authentication/views/login.html:25
+#: lib/authentication/views/login.html:24
 msgid "username"
 msgstr ""
 
-#: lib/authentication/views/login.html:28
+#: lib/authentication/views/login.html:27
 msgid "Password"
 msgstr ""
 
-#: lib/authentication/views/login.html:29
+#: lib/authentication/views/login.html:28
 msgid "password"
 msgstr ""
 
@@ -53,4 +53,20 @@ msgstr ""
 
 #: lib/error/views/404.html:8
 msgid "Maybe you want to get back?"
+msgstr ""
+
+#: lib/usermanagement/index.js:31
+msgid "Usermanagement"
+msgstr ""
+
+#: lib/usermanagement/index.js:115
+msgid "Username or Auth-Method are missing!"
+msgstr ""
+
+#: lib/usermanagement/index.js:123
+msgid "Error while creating user in database"
+msgstr ""
+
+#: lib/usermanagement/index.js:132
+msgid "Username or id have not been given"
 msgstr ""

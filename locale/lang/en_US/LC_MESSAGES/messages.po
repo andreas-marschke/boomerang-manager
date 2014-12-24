@@ -1,57 +1,148 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2014-12-24 01:46+0000\n"
+"PO-Revision-Date: 2014-12-24 02:59+0100\n"
+"Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
-"PO-Revision-Date: 2014-12-08 10:43+0000\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2014-12-08 10:43+0000\n"
-"Last-Translator: Automatically generated\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/authentication/index.js:62 lib/authentication/views/login.html:7
-#: lib/authentication/views/login.html:31
-msgid "Login"
-msgstr "Login"
+#: assets/js/applications/usermanagement/templates/mainview.html
+msgid "<a>Rows</a>"
+msgstr "<a>Rows</a>"
 
-#: lib/authentication/index.js:64
-msgid "Login Failed!"
-msgstr "Login Failed!"
+#: assets/js/applications/usermanagement/templates/createuser.html
+msgid "Authentication"
+msgstr "Authentication"
 
-#: lib/authentication/index.js:64
-msgid "Login Error"
-msgstr "Login Error"
+#: assets/js/applications/usermanagement/templates/backbutton.html
+#: assets/js/applications/usermanagement/templates/userview.html
+msgid "Back"
+msgstr "Back"
 
-#: lib/error/index.js:33
-msgid "404 - Not Found!"
-msgstr "404 - Not Found!"
+#: assets/js/applications/usermanagement/templates/mainview.html
+msgid "By User"
+msgstr "By User"
 
-#: lib/authentication/views/login.html:24
+#: assets/js/applications/usermanagement/templates/mainview.html
+msgid "By Webcollection"
+msgstr "By Webcollection"
+
+#: assets/js/applications/usermanagement/templates/createuser.html
+msgid "Collection Name:"
+msgstr "Collection Name:"
+
+#: assets/js/applications/usermanagement/templates/mainview.html
+msgid "Create New User"
+msgstr "Create New User"
+
+#: assets/js/applications/usermanagement/templates/createuser.html
+msgid "Create New Users Collection"
+msgstr "Create New Users Collection"
+
+#: assets/js/applications/usermanagement/templates/userview.html
+msgid "Details:"
+msgstr "Details"
+
+#: assets/js/applications/usermanagement/templates/mainview.html
+msgid "Features"
+msgstr "Features"
+
+#: assets/js/applications/usermanagement/templates/mainview.html
+msgid "Filter"
+msgstr "Filter"
+
+#: assets/js/applications/usermanagement/templates/mainview.html
+#: assets/js/applications/usermanagement/templates/userview.html
+msgid "Get to grips with your userbase!"
+msgstr ""
+
+#: assets/js/applications/usermanagement/templates/userview.html
+msgid "ID:"
+msgstr ""
+
+#: assets/js/applications/usermanagement/templates/loading.html
+msgid "Loading..."
+msgstr ""
+
+#: assets/js/applications/usermanagement/templates/mainview.html
+msgid "Next"
+msgstr ""
+
+#: assets/js/applications/usermanagement/templates/mainview.html
+msgid "Previous"
+msgstr ""
+
+#: assets/js/applications/usermanagement/templates/createuser.html
+msgid "Register New User"
+msgstr ""
+
+#: assets/js/applications/usermanagement/templates/mainview.html
+msgid ""
+"Use this site to manage your user accounts and what they are able to do in "
+"your environment."
+msgstr ""
+
+#: assets/js/applications/usermanagement/templates/mainview.html
+#: assets/js/applications/usermanagement/templates/userview.html
+#, fuzzy
+msgid "Usermanagement"
+msgstr "Username"
+
+#: assets/js/applications/usermanagement/templates/createuser.html
+#: assets/js/applications/usermanagement/templates/mainview.html
 msgid "Username"
 msgstr "Username"
 
-#: lib/authentication/views/login.html:25
-msgid "username"
-msgstr "username"
+#: assets/js/applications/usermanagement/templates/createuser.html
+#: assets/js/applications/usermanagement/templates/userview.html
+#, fuzzy
+msgid "Username:"
+msgstr "Username"
 
-#: lib/authentication/views/login.html:28
-msgid "Password"
-msgstr "Password"
+#: assets/js/applications/usermanagement/templates/userview.html
+msgid "Via:"
+msgstr ""
 
-#: lib/authentication/views/login.html:29
-msgid "password"
-msgstr "password"
+#: assets/js/applications/usermanagement/templates/createuser.html
+#: assets/js/applications/usermanagement/templates/mainview.html
+msgid "Webcollection"
+msgstr ""
 
-#: lib/error/views/404.html:6
-msgid "Error 404"
-msgstr "Error 404"
+#: assets/js/applications/usermanagement/templates/userview.html
+msgid "Webpages"
+msgstr ""
 
-#: lib/error/views/404.html:7
-msgid "File was not found! :("
-msgstr "File was not found! :("
+#~ msgid "Login"
+#~ msgstr "Login"
 
-#: lib/error/views/404.html:8
-msgid "Maybe you want to get back?"
-msgstr "Maybe you want to get back?"
+#~ msgid "Login Failed!"
+#~ msgstr "Login Failed!"
+
+#~ msgid "Login Error"
+#~ msgstr "Login Error"
+
+#~ msgid "404 - Not Found!"
+#~ msgstr "404 - Not Found!"
+
+#~ msgid "username"
+#~ msgstr "username"
+
+#~ msgid "Password"
+#~ msgstr "Password"
+
+#~ msgid "password"
+#~ msgstr "password"
+
+#~ msgid "Error 404"
+#~ msgstr "Error 404"
+
+#~ msgid "File was not found! :("
+#~ msgstr "File was not found! :("
+
+#~ msgid "Maybe you want to get back?"
+#~ msgstr "Maybe you want to get back?"
